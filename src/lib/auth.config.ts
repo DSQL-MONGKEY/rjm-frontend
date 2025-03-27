@@ -5,9 +5,10 @@ import GithubProvider from 'next-auth/providers/github';
 const authConfig = {
   providers: [
     GithubProvider({
-      clientId: process.env.GITHUB_ID ?? '',
-      clientSecret: process.env.GITHUB_SECRET ?? ''
+      clientId: process.env.AUTH_GITHUB_ID ?? '',
+      clientSecret: process.env.AUTH_GITHUB_SECRET ?? ''
     }),
+
     CredentialProvider({
       credentials: {
         email: {

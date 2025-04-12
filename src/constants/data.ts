@@ -9,7 +9,7 @@ export type Product = {
   id: number;
   category: string;
   updated_at: string;
-};
+}; 
 
 //Info: The following data is used for the sidebar navigation and Cmd K bar.
 export const navItems: NavItem[] = [
@@ -22,10 +22,58 @@ export const navItems: NavItem[] = [
     items: [] // Empty array as there are no child items for Dashboard
   },
   {
+    title: 'Kanban',
+    url: '/dashboard/kanban',
+    icon: 'kanban',
+    shortcut: ['k', 'k'],
+    isActive: false,
+    items: [] // No child items
+  },
+  {
+    title: 'Order',
+    url: '/dashboard/order',
+    icon: 'order',
+    shortcut: ['o', 'o'],
+    isActive: false,
+    items: [] // No child items
+  },
+  {
     title: 'Product',
     url: '/dashboard/product',
     icon: 'product',
     shortcut: ['p', 'p'],
+    isActive: false,
+    items: [] // No child items
+  },
+  {
+    title: 'Payroll',
+    url: '/dashboard/payroll',
+    icon: 'payroll',
+    shortcut: ['t', 't'],
+    isActive: false,
+    items: [] // No child items
+  },
+  {
+    title: 'Transaction',
+    url: '/dashboard/transaction',
+    icon: 'transaction',
+    shortcut: ['t', 't'],
+    isActive: false,
+    items: [] // No child items
+  },
+  {
+    title: 'Tracker',
+    url: '/dashboard/tracker',
+    icon: 'tracker',
+    shortcut: ['t', 't'],
+    isActive: false,
+    items: [] // No child items
+  },
+  {
+    title: 'Customer',
+    url: '/dashboard/customer',
+    icon: 'customer',
+    shortcut: ['t', 't'],
     isActive: false,
     items: [] // No child items
   },
@@ -43,6 +91,18 @@ export const navItems: NavItem[] = [
         shortcut: ['m', 'm']
       },
       {
+        title: 'Users',
+        url: '/dashboard/users',
+        icon: 'product',
+        shortcut: ['em', 'em']
+      },
+      {
+        title: 'Create User',
+        url: '/dashboard/create-user',
+        icon: 'userPen',
+        shortcut: ['cu', 'cu']
+      },
+      {
         title: 'Login',
         shortcut: ['l', 'l'],
         url: '/',
@@ -50,14 +110,7 @@ export const navItems: NavItem[] = [
       }
     ]
   },
-  {
-    title: 'Kanban',
-    url: '/dashboard/kanban',
-    icon: 'kanban',
-    shortcut: ['k', 'k'],
-    isActive: false,
-    items: [] // No child items
-  }
+  
 ];
 
 export interface SaleUser {

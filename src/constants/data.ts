@@ -11,6 +11,8 @@ export type Product = {
   updated_at: string;
 }; 
 
+
+
 //Info: The following data is used for the sidebar navigation and Cmd K bar.
 export const navItems: NavItem[] = [
   {
@@ -38,8 +40,8 @@ export const navItems: NavItem[] = [
     items: [] // No child items
   },
   {
-    title: 'Product',
-    url: '/dashboard/product',
+    title: 'Packet',
+    url: '/dashboard/packet',
     icon: 'product',
     shortcut: ['p', 'p'],
     isActive: false,
@@ -92,15 +94,15 @@ export const navItems: NavItem[] = [
       },
       {
         title: 'Users',
-        url: '/dashboard/users',
+        url: '/dashboard/user',
         icon: 'product',
-        shortcut: ['em', 'em']
+        shortcut: ['u', 'u']
       },
       {
-        title: 'Create User',
-        url: '/dashboard/create-user',
-        icon: 'userPen',
-        shortcut: ['cu', 'cu']
+        title: 'Roles',
+        url: '/dashboard/role',
+        icon: 'product',
+        shortcut: ['r', 'r']
       },
       {
         title: 'Login',

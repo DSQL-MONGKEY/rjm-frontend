@@ -9,8 +9,8 @@ import { Plus } from 'lucide-react';
 import Link from 'next/link';
 import { SearchParams } from 'nuqs/server';
 import { Suspense } from 'react';
-import ProductListingPage from '@/features/products/components/product-listing';
-import ProductTableAction from '@/features/products/components/product-tables/product-table-action';
+import ProductTableAction from '@/features/products/components/product-tables/order-table-action';
+import OrderListingPage from '@/features/order/components/order-listing';
 
 export const metadata = {
   title: 'Dashboard: Orders'
@@ -37,7 +37,7 @@ export default async function Page(props: pageProps) {
             description='Manage products (Server side table functionalities.)'
           />
           <Link
-            href='/dashboard/product/new'
+            href='/dashboard/order/new'
             className={cn(buttonVariants(), 'text-xs md:text-sm')}
           >
             <Plus className='mr-2 h-4 w-4' /> Add New
@@ -49,7 +49,7 @@ export default async function Page(props: pageProps) {
           key={key}
           fallback={<DataTableSkeleton columnCount={5} rowCount={10} />}
         >
-          <ProductListingPage />
+          <OrderListingPage />
         </Suspense>
       </div>
     </PageContainer>

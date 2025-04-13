@@ -11,7 +11,7 @@ const getUserData = async(credentials: any) => {
       password: credentials.password
     }
 
-    const res = await fetch(`${process.env.NEXT_PUBLIC_BACKEND_URL}/api/login`, {
+    const res = await fetch(`${process.env.NEXT_PUBLIC_BACKEND_URL}/login`, {
       method: "POST",
       headers: {
         "Content-Type": "application/json",

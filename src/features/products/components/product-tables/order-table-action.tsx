@@ -6,7 +6,7 @@ import { DataTableSearch } from '@/components/ui/table/data-table-search';
 import {
   CATEGORY_OPTIONS,
   useProductTableFilters
-} from './use-product-table-filters';
+} from './use-order-table-filters';
 
 export default function ProductTableAction() {
   const {
